@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+    text-align: center;
+    text-decoration-color: #2980b9;
+    width: 100%;
+    height: 100vh;
+    background-image: url("12.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+nav { background-color: #676767; padding: 10px; text-align: center; opacity: 0; animation: fadeIn 1.5s ease-in-out forwards; }
+
+nav a { color: rgb(0, 0, 0); text-decoration: none; margin: 0 15px; font-size: 18px; transition: color 0.3s ease-in-out; }
+
+nav a:hover {  animation: pulse 0.5s reverse; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+
+
+
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 40px 20px;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #fefefe;
+}
+
+/*-------------------quizzes----------------------*/
+h1 {
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    animation: slideDown 1.2s ease-out;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .quiz-block {
+    background-color: rgba(235, 210, 210, 0.85);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .quiz-block:hover {
+    transform: scale(1.03);
+  }
+  
+  h2 {
+    color: #4f4340;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0e131c;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #988e87;
+  }
+  
+  .projects {
+    background: transparent;
+  }
+
+  .project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .project-item {
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .project-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .project-item h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+    background:lightgrey;
+    color: #fff;
+    text-align: center;
+  }
+ /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact h2 {
+      font-size: 1.5rem;
+  }
+
+  .socials {
+      gap: 15px;
+  }
+
+  .socials a {
+      font-size: 1.25rem;
+  }
+}
